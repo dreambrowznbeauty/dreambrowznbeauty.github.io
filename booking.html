@@ -43,6 +43,27 @@
   </section>
 
   <!-- ============================================
+       Calendly Embed Section
+       ============================================ -->
+  <section class="calendly-container" style="padding: 3rem 2rem; background: white;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="text-align: center; color: #8b5a8e; margin-bottom: 3rem;">Select Your Service & Time</h2>
+      
+      <!-- Calendly Embed Code -->
+      <!-- START: REPLACE WITH YOUR CALENDLY EMBED -->
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/dreambrowznbeauty/30min" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+      <!-- END: CALENDLY EMBED -->
+
+      <p style="text-align: center; margin-top: 2rem; color: #666; font-size: 0.9rem;">
+        💡 <strong>Tip:</strong> Appointments available Tuesday - Saturday, 10 AM - 7 PM. Walk-ins welcome!
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================
        Booking Instructions
        ============================================ -->
   <section class="booking-intro" style="padding: 3rem 2rem; background: #f9f7f7; text-align: center;">
@@ -100,40 +121,6 @@
   </section>
 
   <!-- ============================================
-       Calendly Embed Section
-       ============================================ -->
-  <section class="calendly-container" style="padding: 3rem 2rem; background: white;">
-    <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="text-align: center; color: #8b5a8e; margin-bottom: 3rem;">Select Your Service & Time</h2>
-      
-      <!-- Calendly Embed Placeholder -->
-      <!-- <div id="calendly-embed" style="border: 2px dashed #d4a5a5; border-radius: 10px; padding: 2rem; text-align: center; background: #f9f7f7; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-        <div>
-          <h3 style="color: #8b5a8e; margin-bottom: 1rem;">📅 Calendly Embed</h3>
-          <p style="color: #666; margin-bottom: 1rem;">
-            <strong>Admin Note:</strong> Replace this section with your Calendly embed code
-          </p>
-          <p style="color: #999; font-size: 0.9rem;">
-            Instructions: Log in to calendly.com → Copy embed code → Paste between the &lt;!-- START --&gt; and &lt;!-- END --&gt; comments in this file
-          </p>
-        </div>
-      </div> -->
-
-      <!-- Calendly Embed Code (uncomment and replace YOUR_URL with your Calendly URL) -->
-      <!-- START: REPLACE WITH YOUR CALENDLY EMBED -->
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/dreambrowznbeauty/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-      <!-- END: CALENDLY EMBED -->
-
-      <p style="text-align: center; margin-top: 2rem; color: #666; font-size: 0.9rem;">
-        💡 <strong>Tip:</strong> Appointments available Tuesday - Saturday, 10 AM - 7 PM. Walk-ins welcome!
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================
        FAQ Section
        ============================================ -->
   <section class="faq" style="padding: 3rem 2rem; background: #f9f7f7;">
@@ -168,23 +155,83 @@
   </section>
 
   <!-- ============================================
-       Contact Backup Section
+       Contact Backup Section (Mobile-Friendly)
        ============================================ -->
   <section class="backup-contact" style="padding: 3rem 2rem; background: white;">
     <div style="max-width: 800px; margin: 0 auto;">
-      <h2 style="text-align: center; color: #8b5a8e; margin-bottom: 2rem;">Can't Find Your Time Slot?</h2>
+      <h2 style="text-align: center; color: #8b5a8e; margin-bottom: 1rem;">Can't Find Your Time Slot?</h2>
       <p style="text-align: center; color: #666; margin-bottom: 2rem;">
-        If you can't find the perfect time online, reach out directly and I'll do my best to accommodate you.
+        No problem! Reach out via WhatsApp, phone, or message—I'll do my best to accommodate you.
       </p>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; text-align: center;">
-        <div>
-          <h3 style="color: #8b5a8e;">📞 Call</h3>
-          <p style="font-size: 1.2rem;"><a href="tel:+1234567890" style="color: #8b5a8e; text-decoration: none;">(123) 456-7890</a></p>
-        </div>
-        <div>
-          <h3 style="color: #8b5a8e;">📧 Email</h3>
-          <p style="font-size: 1rem;"><a href="mailto:info@dreambrowznbeauty.com" style="color: #8b5a8e; text-decoration: none;">info@dreambrowznbeauty.com</a></p>
-        </div>
+
+      <!-- Quick Contact Options (Mobile-Friendly Stack) -->
+      <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem;">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/7174668719?text=Hi%20Dream%20Browz%20n%20Beauty!%20I'd%20like%20to%20book%20an%20appointment." 
+           style="display: block; padding: 1.5rem; background: #25D366; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;"
+           onmouseover="this.style.background='#1fa856'" onmouseout="this.style.background='#25D366'">
+          💬 Message on WhatsApp
+        </a>
+
+        <!-- Phone Button -->
+        <a href="tel:+17174668719" 
+           style="display: block; padding: 1.5rem; background: #8b5a8e; color: white; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s;"
+           onmouseover="this.style.background='#704a7a'" onmouseout="this.style.background='#8b5a8e'">
+          📞 Call (717) 466-8719
+        </a>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div style="border-top: 2px solid #f0f0f0; padding-top: 2rem;">
+        <h3 style="text-align: center; color: #8b5a8e; margin-bottom: 1.5rem;">Or Send a Message</h3>
+        
+        <form id="contact-form" method="POST" action="https://formspree.io/f/xgonzklg" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div>
+            <label for="name" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" 
+              style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+          </div>
+
+          <div>
+            <label for="email" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" 
+              style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+          </div>
+
+          <div>
+            <label for="phone" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" 
+              style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+          </div>
+
+          <div>
+            <label for="service" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Service Interested In</label>
+            <select id="service" name="service" 
+              style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+              <option value="">-- Select a service --</option>
+              <option value="Brows">Brows</option>
+              <option value="Waxing">Waxing</option>
+              <option value="Facials">Facials</option>
+              <option value="Lash Lifting">Lash Lifting</option>
+              <option value="Tinting">Tinting</option>
+              <option value="Other">Other/Custom</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your appointment request..." 
+              style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+          </div>
+
+          <button type="submit" 
+            style="padding: 1rem; background: #8b5a8e; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: background 0.3s;"
+            onmouseover="this.style.background='#704a7a'" onmouseout="this.style.background='#8b5a8e'">
+            Send Message
+          </button>
+        </form>
+
+        <p id="form-status" style="text-align: center; margin-top: 1rem; color: #666; font-size: 0.9rem;"></p>
       </div>
     </div>
   </section>
@@ -219,6 +266,75 @@
         paragraph.style.display = 'none';
       }
     }
+
+    // Contact form submission handler with Formspree integration
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const statusDiv = document.getElementById('form-status');
+      
+      // Get form element
+      const form = this;
+      
+      // Show processing message
+      statusDiv.innerHTML = '⏳ Sending your message...';
+      statusDiv.style.color = '#666';
+      
+      // Prepare form data
+      const formData = new FormData(form);
+      
+      // Submit to Formspree using fetch
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          // Success!
+          const nameField = document.getElementById('name');
+          const name = nameField.value;
+          
+          statusDiv.innerHTML = '✅ Thank you ' + name + '! Your message has been received. I\'ll get back to you shortly. For faster response, reach out via WhatsApp!';
+          statusDiv.style.color = '#28a745';
+          
+          // Reset form
+          form.reset();
+          
+          // Scroll to message
+          statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        statusDiv.innerHTML = '❌ Error sending message. Please try again or reach out via WhatsApp.';
+        statusDiv.style.color = '#dc3545';
+      });
+    });
   </script>
+
+  <!-- 
+    INTEGRATION NOTE: To connect this form to an email service:
+    
+    Option 1: Formspree (Recommended - Free)
+    1. Go to formspree.io and create account
+    2. Create form for info@dreambrowznbeauty.com
+    3. Replace form opening tag with:
+       <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    4. Form submissions will auto-email to you
+    
+    Option 2: Zapier + Webhook
+    1. Create Zapier workflow triggered on form submission
+    2. Send to email/SMS/WhatsApp/Slack
+    
+    Option 3: Firebase/Backend
+    1. Set up serverless backend to store submissions
+    2. Add email trigger
+    
+    Currently: Form data is saved to browser localStorage & logged to console
+  -->
 </body>
 </html>
