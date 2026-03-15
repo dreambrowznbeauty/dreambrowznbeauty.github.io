@@ -11,7 +11,7 @@ This guide will help you set up Calendly to handle appointment scheduling for yo
 2. Click **"Sign Up Free"** (upper right)
 3. Enter your email and create a password
 4. Complete the setup wizard:
-   - **Name**: Your name or "Dream Browz n Beauty Studio"
+   - **Name**: Your name or "Dream Browz & Beauty Studio"
    - **Email**: Your studio email
    - **Time Zone**: Select your local time zone
    - **Availability**: Set your default working hours
@@ -312,4 +312,4 @@ Advanced option: Create separate Calendly accounts (one per service)
 ---
 
 **Last Updated**: March 13, 2026  
-Dream Browz n Beauty Studio Appointment Scheduling System
+Dream Browz & Beauty Studio Appointment Scheduling System

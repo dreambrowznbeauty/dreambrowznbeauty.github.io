@@ -1,6 +1,6 @@
-# Dream Browz n Beauty Studio - Website Project Plan
+# Dream Browz & Beauty Studio - Website Project Plan
 
-**Project Goal**: Create a professional, responsive GitHub Pages website for Dream Browz n Beauty Studio showcasing beauty services and enabling customer engagement.
+**Project Goal**: Create a professional, responsive GitHub Pages website for Dream Browz & Beauty Studio showcasing beauty services and enabling customer engagement.
 
 **Domain**: https://dreambrowznbeauty.com  
 **Repository**: https://github.com/dreambrowznbeauty/dreambrowznbeauty  
@@ -186,5 +186,5 @@ dreambrowznbeauty/
 ---
 
 **Last Updated**: March 7, 2026  
-**Project Lead**: Dream Browz n Beauty Studio  
+**Project Lead**: Dream Browz & Beauty Studio  
 **Status**: Phase 2 - Pages Development In Progress

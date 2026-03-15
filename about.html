@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Dream Browz n Beauty Studio - Contact information, hours, and meet our team.">
+  <meta name="description" content="About Dream Browz & Beauty Studio - Contact information, hours, and meet our team.">
   <meta name="keywords" content="beauty studio, contact, hours, location, team">
   
-  <title>About Us & Contact - Dream Browz n Beauty Studio</title>
+  <title>About Us & Contact - Dream Browz & Beauty Studio</title>
   
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +16,7 @@
        ============================================ -->
   <nav>
     <div class="navbar">
-      <div class="logo"><img src="images/logo.png" alt="Dream Browz n Beauty Studio" style="height: 50px; width: auto;"></div>
+      <div class="logo"><img src="images/logo.png" alt="Dream Browz & Beauty Studio" style="height: 50px; width: auto;"></div>
       <div class="nav-toggle">
         <span></span>
         <span></span>
@@ -46,9 +46,9 @@
   <section class="about">
     <div class="about-content">
       <div class="about-text">
-        <h2>Dream Browz n Beauty Studio</h2>
+        <h2>Dream Browz & Beauty Studio</h2>
         <p>
-          Welcome to Dream Browz n Beauty Studio, your destination for professional beauty treatments 
+          Welcome to Dream Browz & Beauty Studio, your destination for professional beauty treatments 
           in a relaxing and welcoming environment. We specialize in expert brow shaping, waxing, facials, 
           lash lifting, and tinting services designed to enhance your natural beauty.
         </p>
@@ -61,7 +61,7 @@
 
         <p>
           With attention to detail, use of high-quality products, and a commitment to client satisfaction, 
-          Dream Browz n Beauty Studio has become a trusted name in beauty services.
+          Dream Browz & Beauty Studio has become a trusted name in beauty services.
         </p>
 
         <h3 style="margin-top: 2rem; color: #8b5a8e;">Why Choose Us?</h3>
@@ -97,6 +97,63 @@
   </section>
 
   <!-- ============================================
+       Contact Form Section
+       ============================================ -->
+  <section class="backup-contact" style="padding: 3rem 2rem; background: #f9f9f9; max-width: 600px; margin: 2rem auto;">
+    <div style="border-top: 2px solid #f0f0f0; padding-top: 2rem;">
+      <h3 style="text-align: center; color: #8b5a8e; margin-bottom: 1.5rem;">Send us a Message</h3>
+      
+      <form id="contact-form" method="POST" action="https://formspree.io/f/xgonzklg" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <label for="name" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" 
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+        </div>
+
+        <div>
+          <label for="email" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" 
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+        </div>
+
+        <div>
+          <label for="phone" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" 
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+        </div>
+
+        <div>
+          <label for="service" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Service Interested In</label>
+          <select id="service" name="service" 
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; box-sizing: border-box;">
+            <option value="">-- Select a service --</option>
+            <option value="Brows">Brows</option>
+            <option value="Waxing">Waxing</option>
+            <option value="Facials">Facials</option>
+            <option value="Lash Lifting">Lash Lifting</option>
+            <option value="Tinting">Tinting</option>
+            <option value="Other">Other/Custom</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message" style="display: block; margin-bottom: 0.5rem; color: #333; font-weight: bold;">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about your appointment request..." 
+            style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+        </div>
+
+        <button type="submit" 
+          style="padding: 1rem; background: #8b5a8e; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: background 0.3s;"
+          onmouseover="this.style.background='#704a7a'" onmouseout="this.style.background='#8b5a8e'">
+          Send Message
+        </button>
+      </form>
+
+      <p id="form-status" style="text-align: center; margin-top: 1rem; color: #666; font-size: 0.9rem;"></p>
+    </div>
+  </section>
+
+  <!-- ============================================
        Map Section (Optional)
        ============================================ -->
   <section class="about" style="background-color: #f5f5f5;">
@@ -127,7 +184,7 @@
        ============================================ -->
   <footer>
     <div class="footer-content">
-      <p><strong>Dream Browz n Beauty Studio</strong></p>
+      <p><strong>Dream Browz & Beauty Studio</strong></p>
       <p>Professional beauty services for the modern you</p>
       
       <div class="footer-links">
@@ -140,8 +197,7 @@
 
       <div class="footer-divider"></div>
 
-      <p class="footer-copyright">&copy; 2026 Dream Browz n Beauty Studio. All rights reserved.</p>
-      <p class="footer-copyright">Website powered by GitHub Pages</p>
+      <p class="footer-copyright">&copy; 2026 Dream Browz & Beauty Studio. All rights reserved.</p>      
     </div>
   </footer>
 
