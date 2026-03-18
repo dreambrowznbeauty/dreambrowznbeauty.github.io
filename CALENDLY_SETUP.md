@@ -23,10 +23,10 @@ This guide will help you set up Calendly to handle appointment scheduling for yo
 1. In the Calendly dashboard, go to **Settings** (gear icon)
 2. Click **Availability**
 3. Set your business hours:
-   - **Monday - Wednesday**: 10:00 AM - 6:00 PM
-   - **Thursday - Friday**: 10:00 AM - 7:00 PM
-   - **Saturday**: 10:00 AM - 6:00 PM
-   - **Sunday**: Off (disabled)
+   - **Monday**: Off
+   - **Tuesday**: 11:00 AM - 6:00 PM
+   - **Wednesday - Saturday**: 10:00 AM - 7:00 PM
+   - **Sunday**: 10:00 AM - 2:00 PM
 4. Add any additional blocked time (lunch, breaks, closing dates)
 5. Click **Save**
 
