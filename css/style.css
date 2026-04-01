@@ -9,29 +9,29 @@
    Root CSS Variables - Modern Color Palette
    ============================================ */
 :root {
-  /* Primary Colors - Brand */
-  --primary-purple: #8b5a8e;
-  --dark-purple: #6B4475;
-  --light-purple: #9d6fa6;
+  /* Brand palette (matched to logo) */
+  --primary-purple: #7a4b2a; /* cocoa (keeps existing var name compatibility) */
+  --dark-purple: #4b2a1a;    /* deep cocoa */
+  --light-purple: #b08357;  /* caramel */
   
-  /* Accent Colors - Vibrant */
-  --neon-pink: #ff006e;
-  --hot-pink: #ff1493;
-  --vibrant-cyan: #00d9ff;
-  --lime: #39ff14;
-  --coral: #ff6b6b;
+  /* Accent Colors (soft, not neon) */
+  --neon-pink: #b86a7e;      /* muted rose */
+  --hot-pink: #c48998;       /* dusty pink */
+  --vibrant-cyan: #5c7a7a;   /* muted teal */
+  --lime: #8aa27a;           /* muted sage */
+  --coral: #c9796b;          /* muted coral */
   
   /* Neutrals */
-  --dark-bg: #0f0f0f;
-  --light-bg: #fafafa;
+  --dark-bg: #120d0a;
+  --light-bg: #fbf6f0;
   --white: #ffffff;
-  --text-dark: #1a1a1a;
-  --text-light: #666666;
-  --text-muted: #999999;
+  --text-dark: #2b1a12;
+  --text-light: #6f5a50;
+  --text-muted: #9b857b;
   
   /* Warm Tones */
-  --warm-brown: #A0784F;
-  --cream: #F0E6DC;
+  --warm-brown: #b08357;
+  --cream: #f3e7db;
   
   /* Shadows - Modern */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
-  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--neon-pink) 100%);
+  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--light-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -114,7 +114,7 @@ a {
 }
 
 a:hover {
-  color: var(--neon-pink);
+  color: var(--light-purple);
 }
 
 /* ============================================
@@ -147,7 +147,7 @@ nav {
   font-size: 1.3rem;
   font-weight: 900;
   font-family: var(--font-display);
-  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--neon-pink) 100%);
+  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--light-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -184,7 +184,7 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-purple), var(--neon-pink));
+  background: linear-gradient(90deg, var(--primary-purple), var(--light-purple));
   transition: var(--transition-fast);
 }
 
@@ -225,7 +225,7 @@ nav {
    ============================================ */
 
 .coming-soon-banner {
-  background: linear-gradient(90deg, var(--primary-purple) 0%, var(--neon-pink) 100%);
+  background: linear-gradient(90deg, var(--primary-purple) 0%, var(--light-purple) 100%);
   color: white;
   padding: 1.5rem 2rem;
   text-align: center;
@@ -259,8 +259,16 @@ nav {
   align-items: center;
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--dark-purple) 50%, var(--neon-pink) 100%);
+  background: linear-gradient(135deg, var(--dark-purple) 0%, var(--primary-purple) 60%, #7d3e58 100%);
   color: white;
+}
+
+.hero h1 {
+  text-shadow: 0 2px 14px rgba(18, 13, 10, 0.35);
+}
+
+.hero p {
+  text-shadow: 0 1px 10px rgba(18, 13, 10, 0.28);
 }
 
 .hero::before {
@@ -270,7 +278,7 @@ nav {
   right: -50%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(176, 131, 87, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   animation: float 15s ease-in-out infinite;
 }
@@ -282,7 +290,7 @@ nav {
   left: -30%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(184, 106, 126, 0.10) 0%, transparent 70%);
   border-radius: 50%;
   animation: float 20s ease-in-out infinite 2s;
 }
@@ -372,13 +380,13 @@ nav {
 .btn-primary {
   background: linear-gradient(135deg, var(--primary-purple) 0%, var(--dark-purple) 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(139, 90, 142, 0.3);
+  box-shadow: 0 4px 15px rgba(122, 75, 42, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(139, 90, 142, 0.4);
-  background: linear-gradient(135deg, var(--neon-pink) 0%, var(--primary-purple) 100%);
+  box-shadow: 0 8px 25px rgba(122, 75, 42, 0.32);
+  background: linear-gradient(135deg, var(--light-purple) 0%, var(--primary-purple) 100%);
 }
 
 .btn-secondary {
@@ -389,9 +397,9 @@ nav {
 }
 
 .btn-secondary:hover {
-  background: rgba(139, 90, 142, 0.1);
+  background: rgba(122, 75, 42, 0.08);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(139, 90, 142, 0.2);
+  box-shadow: 0 8px 25px rgba(122, 75, 42, 0.16);
 }
 
 .btn-outline {
@@ -488,7 +496,7 @@ nav {
 
 .pricing {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #f8f6ff 0%, #fff5f7 100%);
+  background: linear-gradient(180deg, #fbf6f0 0%, #fff8f2 100%);
 }
 
 .pricing-container {
@@ -520,7 +528,7 @@ nav {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-purple), var(--neon-pink));
+  background: linear-gradient(90deg, var(--primary-purple), var(--light-purple));
   border-radius: 15px 15px 0 0;
 }
 
@@ -538,7 +546,7 @@ nav {
 .price {
   font-size: 2.5rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--primary-purple), var(--neon-pink));
+  background: linear-gradient(135deg, var(--primary-purple), var(--light-purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -559,6 +567,34 @@ nav {
 
 .pricing-description li:last-child {
   border-bottom: none;
+}
+
+/* Pricing page callouts */
+.callout-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.callout-title {
+  color: var(--primary-purple);
+  margin-bottom: 1rem;
+}
+
+.terms {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.hero.hero-cta {
+  min-height: unset;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--light-purple) 0%, var(--primary-purple) 100%);
 }
 
 /* ============================================
@@ -650,7 +686,7 @@ nav {
    ============================================ */
 
 footer {
-  background: linear-gradient(135deg, var(--warm-brown) 0%, var(--text-dark) 100%);
+  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--text-dark) 100%);
   color: white;
   padding: 4rem 2rem 2rem;
   margin-top: 6rem;
@@ -784,6 +820,10 @@ footer {
   
   .btn {
     width: 100%;
+  }
+
+  .hero h1 {
+    opacity: 0.98;
   }
   
   .footer-links {

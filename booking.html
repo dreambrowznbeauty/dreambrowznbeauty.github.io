@@ -37,7 +37,7 @@
   <!-- ============================================
        Coming Soon Banner
        ============================================ -->
-  <div style="background: linear-gradient(135deg, #8b5a8e 0%, #d4a5a5 100%); color: white; padding: 1.5rem 2rem; text-align: center; font-size: 1.1rem; font-weight: bold;">
+  <div class="coming-soon-banner">
     🎉 <strong>Grand Opening April 1st!</strong> We can't wait to welcome you to Dream Browz & Beauty Studio. Pre-book your first appointment today!
   </div>
 
@@ -232,8 +232,9 @@
       }
     }
 
-    // Contact form submission handler with Formspree integration
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    // Contact form submission handler with Formspree integration (if enabled)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const statusDiv = document.getElementById('form-status');
       
