@@ -451,6 +451,7 @@ nav {
   box-shadow: var(--shadow-md);
   transition: var(--transition-spring);
   cursor: pointer;
+  padding:10px;
 }
 
 .service-card:hover {
@@ -464,6 +465,7 @@ nav {
   object-fit: cover;
   display: block;
   transition: var(--transition-smooth);
+  border-radius: inherit;
 }
 
 .service-card:hover .service-image {
