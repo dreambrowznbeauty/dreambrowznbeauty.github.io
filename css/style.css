@@ -50,6 +50,61 @@
 }
 
 /* ============================================
+   Google Reviews Section
+   ============================================ */
+.reviews-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--light-bg) 0%, rgba(176, 131, 87, 0.05) 100%);
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviews-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.reviews-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.reviews-widget-container {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.google-reviews-widget {
+  width: 100%;
+  min-height: 400px;
+}
+
+.reviews-cta {
+  text-align: center;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.reviews-cta p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.reviews-cta .btn {
+  display: inline-block;
+}
+
+/* ============================================
    Global Styles
    ============================================ */
 
