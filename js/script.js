@@ -2,6 +2,23 @@
 // Dream Browz n Beauty - Main JavaScript
 // ============================================
 
+// ============================================
+// Google Analytics
+// ============================================
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NXL078TYCG');
+
+// Load Google Analytics script dynamically
+(function() {
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-NXL078TYCG';
+  document.head.appendChild(script);
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize mobile menu toggle
   initMobileMenu();
