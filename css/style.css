@@ -324,6 +324,41 @@ nav {
 }
 
 /* ============================================
+   Address Bar
+   ============================================ */
+
+.address-bar {
+  background: var(--primary-purple);
+  color: white;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.address-bar p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.address-bar a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.address-bar a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* ============================================
    Coming Soon Banner
    ============================================ */
 
@@ -1016,9 +1051,18 @@ footer {
   h1 {
     font-size: 2rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
+  }
+
+  .address-bar {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .address-bar p {
+    gap: 0.5rem;
   }
 }
 
@@ -1029,6 +1073,20 @@ footer {
   
   .logo img {
     height: 80px;
+  }
+
+  .address-bar {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .address-bar p {
+    gap: 0.25rem;
+    justify-content: center;
+  }
+
+  .address-bar a {
+    font-size: 0.75rem;
   }
   
   .coming-soon-banner {
